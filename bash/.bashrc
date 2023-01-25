@@ -35,8 +35,7 @@ git_branch() {
 # esac
 
 # prompt customization
-PS1="╔ $USER@$HOSTNAME in (${PWD//$HOME/\~}$(git_branch)) \n╚ "
-
+PS1='╔ $USER@$HOSTNAME in (${PWD//$HOME/\~}$(git_branch)) \n╚ '
 
 # Setting aliases
 alias python='python3'

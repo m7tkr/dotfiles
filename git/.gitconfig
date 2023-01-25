@@ -1,0 +1,16 @@
+[user]
+	name = m7tkr
+	email = m7tkr@outlook.com
+[alias]
+	log-pretty = log --pretty=oneline --abbrev-commit
+    show-graph = log --pretty=oneline --abbrev-commit --graph --all
+    co = checkout
+    br = branch
+    ci = commit
+    cim = commit -m
+    st = status
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
