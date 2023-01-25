@@ -1,0 +1,9 @@
+#! /usr/local/bin/bash
+
+SOURCEPATH=$( dirname ${BASH_SOURCE[0]} )
+
+while read; do
+    hardLink="$HOME/$SOURCEPATH/${REPLY%%:*}/${REPLY##*/}"
+    symLink="${REPLY##*:}"
+    eval ln -sf $hardLink $symLink
+done < $SOURCEPATH/locations

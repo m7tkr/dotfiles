@@ -1,0 +1,8 @@
+bash:$HOME/.bashrc
+bash:$HOME/.inputrc
+vim:$HOME/.vimrc
+tmux:$HOME/.tmux.conf
+git:$HOME/.gitconfig
+lynx:$HOME/lynx.cfg
+lynx:$HOME/.lynxrc
+alacritty:$HOME/.config/alacritty/alacritty.yml
